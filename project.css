@@ -1,0 +1,128 @@
+/* Extra styles for the Thrifti-Lux case study page.
+   Loaded after ../style.css so it only adds to the main stylesheet. */
+
+:root {
+  --brand: #FF914C;
+  --brand-dark: #a95d2e;
+  --brand-soft: #fff4ec;
+}
+
+/* ---------- Header in the project's own colours ---------- */
+.site-header {
+  background: linear-gradient( 
+133deg, #ff914c, #763f1c);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.site-header h1 { margin: 0.5rem 0 0.25rem; font-size: 2.4rem; }
+.tagline { margin: 0 0 1.25rem; font-size: 1.1rem; opacity: 0.92; }
+
+/* ---------- At a glance ---------- */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+.facts div {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--brand);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  text-align: center;   /* centres the label and the value in each card */
+}
+
+.facts dt { margin: 0; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand-dark); }
+.facts dd { margin: 0 0 0; font-size: 0.8rem; color: var(--text); }
+
+
+blockquote {
+  margin: 1rem 0 0;
+  padding: 0.6rem 1.1rem;
+  border-left: 4px solid var(--brand);
+  background: var(--brand-soft);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+/* ---------- Two-up and four-up cards ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cards article {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  border-top: 4px solid var(--brand);
+}
+
+.cards h3 { margin-top: 0; color: var(--brand-dark); }
+.cards p { margin: 0.3rem 0 0; }
+
+/* ---------- Blueprint & slide figures ---------- */
+.blueprint img { width: 100%; height: auto; background: #fff; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery figure { margin: 0; }
+.gallery img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #111827;
+  display: block;
+  border-radius: 8px;
+}
+
+.deck-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+
+.button-link {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button-link:hover { background: var(--brand-dark); color: #fff; }
+
+.pdf-frame { width: 100%; height: 520px; border: 1px solid var(--border); border-radius: 8px; margin-top: 0.8rem; }
+
+/* ---------- Table tweaks ---------- */
+.project-table thead th { background: var(--brand-soft); color: var(--brand-dark); }
+.project-table td:first-child, .project-table th[scope="row"] { white-space: nowrap; font-weight: 600; }
+
+.back-link { margin: 0 0 2rem; text-align: center; }
+
+@media (max-width: 600px) {
+  .pdf-frame { height: 360px; }
+  .project-table td:first-child, .project-table th[scope="row"] { white-space: normal; }
+}
+
+/* ---------- Added: Ideathon content (audience, revenue, stakeholder map) ---------- */
+.cards.three { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+.mindmap { margin: 1rem 0 0; }
+.mindmap svg { display: block; width: 100%; height: auto; background: #111; border-radius: 10px; }
+.mindmap text { font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; text-anchor: middle; }
+.mindmap .node-label { font-weight: 700; font-size: 17px; fill: #fff; }
+.mindmap .node-small { font-weight: 600; font-size: 12.5px; fill: #1f2937; }
+.mindmap .link { stroke: #6b7280; stroke-width: 2; fill: none; }
+.mindmap .link-qa { stroke: #ffc27a; stroke-width: 2; fill: none; }
+.mindmap figcaption { margin-top: 0.5rem; }

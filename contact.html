@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ananya Balu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <img class="profile-photo" src="images/profilepic.jpeg" alt="Portrait of Ananya Balu smiling, wearing a denim jacket">
+    <h1>Contact</h1>
+    <p class="tagline">Let's connect, I'd love to hear from you</p>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="details">
+      <h2>Contact Details</h2>
+      <address>
+        <p><strong>Email:</strong> <a href="mailto:annebemyself@gmail.com">annebemyself@gmail.com</a></p>
+        <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ananyabalasubramanian" target="_blank" rel="noopener">linkedin.com/in/ananyabalasubramanian</a></p>
+      </address>
+    </section>
+
+    <section id="message">
+      <h2>Send a Message</h2>
+      <!-- Opens the visitor's email app. Swap for a form service later if you like. -->
+      <form action="mailto:annebemyself@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="reason">Reason for contacting</label>
+        <select id="reason" name="reason">
+          <option>Job opportunity</option>
+          <option>Collaboration</option>
+          <option>Just saying hello</option>
+        </select>
+
+        <label for="msg">Message</label>
+        <textarea id="msg" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Ananya Balu. <a href="index.html">Back to resume</a> &bull; <a href="#top">Back to top</a></p>
+  </footer>
+
+  <script src="bear.js" defer></script>
+</body>
+</html>

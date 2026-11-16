@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Seven chakra points along a central channel with two crossing channels">
+  <rect width="160" height="160" fill="#f8f4ec"/>
+  <line x1="80" y1="22" x2="80" y2="138" stroke="#6b4a3a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 22 C 114 40, 114 56, 80 74 S 46 108, 80 138" fill="none" stroke="#a98a4a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 22 C 46 40, 46 56, 80 74 S 114 108, 80 138" fill="none" stroke="#c9ad6f" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#f8f4ec" stroke-width="2">
+    <circle cx="80" cy="132" r="7" fill="#6b4a3a"/>
+    <circle cx="80" cy="113" r="6.5" fill="#7a5a43"/>
+    <circle cx="80" cy="95"  r="6.5" fill="#8c6a4a"/>
+    <circle cx="80" cy="77"  r="6.5" fill="#9a7a4a"/>
+    <circle cx="80" cy="59"  r="6.5" fill="#a98a4a"/>
+    <circle cx="80" cy="41"  r="6.5" fill="#b99a58"/>
+    <circle cx="80" cy="24"  r="7" fill="#c9ad6f"/>
+  </g>
+</svg>

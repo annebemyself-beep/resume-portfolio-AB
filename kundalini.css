@@ -1,0 +1,61 @@
+/* Extra styles for the Kundalini Yoga project page.
+   Loaded after style.css and project.css. It re-themes the page in the
+   warm cream, brown and gold palette of the report deck. */
+
+:root {
+  --brand: #a98a4a;
+  --brand-dark: #6b4a3a;
+  --brand-soft: #f8f4ec;
+}
+
+.site-header { background: linear-gradient(133deg, #a98a4a, #5a3d30); }
+.site-header .profile-photo { background: var(--brand-soft); }
+
+main h2 { color: var(--brand-dark); }
+.facts dt { font-size: 0.85rem; }
+
+/* ---------- Contents list ---------- */
+.toc ol {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  columns: 2 220px;
+  column-gap: 2rem;
+}
+.toc li { margin: 0.15rem 0; }
+.toc a { color: var(--brand-dark); }
+
+/* ---------- Report text ---------- */
+.report-list { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.report-list li { margin: 0.35rem 0; }
+
+.callout {
+  margin: 1rem 0 0;
+  padding: 0.7rem 1.1rem;
+  border-left: 4px solid var(--brand);
+  background: var(--brand-soft);
+  border-radius: 0 8px 8px 0;
+}
+.callout strong { color: var(--brand-dark); }
+
+/* ---------- Tables ---------- */
+.table-scroll { overflow-x: auto; }
+.report-table thead th { background: var(--brand-soft); color: var(--brand-dark); }
+.report-table td:first-child,
+.report-table th[scope="row"] { font-weight: 600; white-space: nowrap; }
+.report-table tbody tr:hover { background: #fbf8f2; }
+
+/* ---------- Stage cards ---------- */
+.cards .stage { font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0; }
+
+/* ---------- Gallery of slides ---------- */
+.gallery img { background: var(--brand-soft); border: 1px solid var(--border); }
+
+@media (max-width: 600px) {
+  .report-table td:first-child,
+  .report-table th[scope="row"] { white-space: normal; }
+}
+
+/* Match tags, nav and links to the page theme */
+.tech-list li { background: var(--brand-soft); color: var(--brand-dark); }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--brand-dark); }
+a { color: var(--brand-dark); }
