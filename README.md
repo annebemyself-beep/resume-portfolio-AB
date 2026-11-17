@@ -12,5 +12,4 @@ Static HTML/CSS site for GitHub Pages. Upload the contents of this folder to the
 
 ## Files
 - `style.css` shared theme · `project.css` project pages · `kundalini.css` Kundalini colours
-- `bear.js` scroll bear (recreated – replace with your original if you have it)
 - `images/` pictures and slide previews · `docs/` PDFs and the Kundalini PPTX
